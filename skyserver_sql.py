@@ -3,7 +3,7 @@ import requests
 # URL del endpoint de la API para consultas SQL
 url = "https://skyserver.sdss.org/dr17/SkyServerWS/SearchTools/SqlSearch"
 
-# Consulta SQL (obtener los primeros 10 objetos de la tabla PhotoObj)
+# Consulta SQL (obtener los primeros 1000 objetos de la tabla PhotoObj)
 sql_query = """
 SELECT TOP 1000
 p.ra,p.dec,p.r,p.u,p.g,p.i,p.z,

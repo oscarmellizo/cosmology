@@ -1,9 +1,13 @@
 import matplotlib.pyplot as plt
+import pandas as pd
 import numpy as np
 
-# Datos de ejemplo (sustitúyelos por los reales)
-redshift = np.array([0.1, 0.2, 0.3, 0.4, 0.5, 0.6])
-magnitud = np.array([22.1, 21.5, 21.0, 20.5, 20.2, 19.8])
+# Leer el archivo CSV y cargar los datos de las columnas REDSHIFT y PROMEDIO_R
+df = pd.read_csv('resultados.csv') 
+
+# Asignar los datos de las columnas REDSHIFT y PROMEDIO_R a arrays de numpy
+redshift = np.array(df['REDSHIFT'])
+magnitud = np.array(df['PROMEDIO_R'])
 
 # Crear la gráfica
 plt.figure(figsize=(8, 6))
