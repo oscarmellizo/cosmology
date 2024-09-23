@@ -36,7 +36,7 @@ plt.text(0.4, 21.6, f'R² = {r_value**2:.4f}', fontsize=12, color='red')
 # Etiquetas y título
 plt.xlabel('Redshift (z)')
 plt.ylabel('Magnitud')
-plt.title('Redshift vs Magnitud con Línea de Regresión')
+plt.title('Magnitud vs Redshift con Línea de Regresión')
 plt.grid(True)
 
 # Añadir leyenda
